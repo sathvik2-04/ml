@@ -5,8 +5,8 @@ import seaborn as sns
 file_path = "5ai.csv" 
 df = pd.read_csv(file_path)
 
-col1 = "Internal" # Replace with the first col name
-col2 = "External" # Replace with the second col name
+col1 = "Internal" 
+col2 = "External" 
 selected_data = df[[col1, col2]]
 plt.figure(figsize=(8, 6))
 plt.scatter(selected_data[col1], selected_data[col2], color="blue", alpha=0.7)
